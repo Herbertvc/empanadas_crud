@@ -1,0 +1,8 @@
+Empanadas CRUD
+  What should this do ? Login, Add Empanada, Delete Empanada, See which and h0w much empanadas do i have.
+  Order of shits:
+    - Login
+    - Empanadas List
+    - Add Empanada
+    - Delete Empanada
+
