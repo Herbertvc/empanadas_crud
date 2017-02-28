@@ -26,8 +26,6 @@ const store = createStore(function(state, action) {
 });
 
 const authorizedOnly = ({props, router}) => {
-  console.log(props.component);
-  console.log(router);
   if (!props.loggedIn) {
     router.push('/login');
   }
@@ -37,7 +35,7 @@ Inferno.render((
   <Provider store={ store }>
       <Router history={ browserHistory }>
         <Route  component={ App }>
-          <IndexRoute component={ Home } onEnter={ authorizedOnly } />
+          <IndexRoute component={ Home } onEnter={ authorizedOnly }  loggedIn={ true } />
           <Route path="/login" component={ Login } />
         </Route>
       </Router>
